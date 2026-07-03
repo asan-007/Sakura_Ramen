@@ -1,0 +1,407 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    font-family: raleway;
+}
+
+
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/raleway-v37-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/raleway-v37-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* economica-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Economica';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/economica-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* economica-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Economica';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/economica-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ----------- BACKGROUND -----------*/
+
+.landing-section {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-image: url(./assets/img/bgr1.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* ----------- ↓ HEADER ↓ -----------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 160px
+}
+
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.nav-bar {
+    display: flex;
+    gap: 30px;
+    font-size: 26px;
+}
+
+.nav-bar>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.flower-logo-header>img {
+    width: 64px;
+}
+
+
+
+.call-button {
+    display: flex;
+
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    background-color: #9F0908;
+    border-collapse: collapse;
+    border-radius: 10px;
+    
+    padding: 10px 16px 10px 16px;
+    gap: 8px;
+}
+
+.call-button > img {
+    width: 24px;
+    transition: width 0.2s ease;
+}
+
+.phone-number {
+    color: white;
+    font-size: 24px;
+}
+
+/* HOVER EFFECTS */
+
+.call-button:hover {
+    cursor: pointer;
+    border: 3px solid #FFFFFF;
+    font-weight: Bold;
+    transition: 0.2s ease;
+}
+
+.call-button:hover > img {
+    width: 28px;
+    
+}
+
+
+
+.nav-bar>a:hover {
+    font-weight: Bold;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+}
+
+
+
+/* ----------- ↓ HEADLINES ↓ -----------*/
+
+
+.headline-section {
+    display: flex;
+    justify-content: center;
+
+    padding: 260px 0px 0px 0px;
+}
+
+
+.headline-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+#h1-headline {
+    font-size: 96px;
+    font-weight: Bold;
+}
+
+#h2-headline {
+    font-size: 26px;
+    font-weight: normal;
+}
+
+
+
+/* ----------- ↓ HOW TO ORDER ↓ -----------*/
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 120px 0px 0px 0px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 0px 120px 0px;
+    gap: 64px;
+}
+
+.content-section h2 {
+    text-align: center;
+
+    color: #9F0908;
+    font-family: Raleway;
+    font-weight: Bold;
+    font-size: 80px;
+}
+
+
+.food-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 16px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.food-item>img {
+    width: 128px;
+}
+
+.food-item>p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-item span {
+    font-size: 56px;
+    font-family: 'Economica'; 
+    font-weight: Bold;
+}
+
+
+/* <!-- ↓ HOW TO ORDER  ↓ --> */
+
+.our-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(./assets/img/bgr2.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-bottom: 120px;
+}
+
+.our-menu > h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: Bold;
+    font-size: 80px;
+
+    padding: 120px 0px 64px 0px;
+}
+
+
+.menu-list > img {
+    width: 352px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    margin-bottom: 56px;
+}
+
+.menu-list-right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.menu-list-right >h3 {
+    font-size: 39px;
+    font-weight: Bold;
+}
+
+
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    width: 441px;
+    
+    padding: 0px 0px 8px 0px;
+
+    color: #675E54;
+    font-size: 32px;
+
+}
+
+/* <The middle one Suppe container REVERSED> */
+
+.menu-list-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+
+    margin-bottom: 56px;
+}
+
+.menu-list-reverse > img {
+    width: 352px;
+}
+
+
+
+
+/* <!-- ↓ FIND US AT  ↓ --> */
+
+.content-section-find-us-at {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.find-us-at {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.find-us-at > h2 {
+    color: #9F0908;
+    font-weight: Bold;
+    font-size: 80px;
+}
+
+
+.adress {
+    display: flex;
+    font-size: 24px;
+
+    gap: 10px;
+
+    padding: 0px 0px 64px 0px;
+}
+
+.adress > img {
+    width: 20px;
+}
+
+
+
+/* <!-- ↓ FOOTER  ↓ --> */
+
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 144px;
+    background-color: #0A141E;
+
+    padding: 0px 159px 0px 159px;
+}
+
+.header-footer {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    gap: 24px;
+}
+
+.header-footer > img {
+    width: 44px;
+}
+
+.header-footer h2 {
+    font-size: 22px;
+}
+
+
+
+.social-platforms {
+    display: flex;
+    gap: 16px;
+}
+
+.socials-list img {
+    width: 40px;
+}
